@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile App Link Converter</title>
+</head>
+
+<body>
+
+    <script>
+        function openMobileAppLink(platform) {
+            var appLink;
+
+            switch (platform.toLowerCase()) {
+                case "youtube":
+                    appLink = "vnd.youtube://vH5bvnJGQ3k";
+                    break;
+                case "tiktok":
+                    appLink = "tiktok://user?u=youngnishant";
+                    break;
+                case "facebook":
+                    appLink = "fb://profile/youngnishant";
+                    break;
+                case "instagram":
+                    appLink = "instagram://user?username=youngnishant";
+                    break;
+                case "amazon":
+                    appLink = "com.amazon.mobile.shopping://www.amazon.com";
+                    break;
+                case "ebay":
+                    appLink = "com.ebay.mobile://launch?itemId=example-item-id";
+                    break;
+                case "reddit":
+                    appLink = "reddit://www.reddit.com";
+                    break;
+                case "temu":
+                    appLink = "temu://example-feature";
+                    break;
+                case "spotify":
+                    appLink = "spotify://user/youngnishant";
+                    break;
+                case "applemusic":
+                    appLink = "music://artist/example-artist-id";
+                    break;
+                case "deezer":
+                    appLink = "deezer://artist/example-artist-id";
+                    break;
+                case "soundcloud":
+                    appLink = "soundcloud://users/youngnishant";
+                    break;
+                case "messenger":
+                    appLink = "fb-messenger://user/example-user-id";
+                    break;
+                case "whatsapp":
+                    appLink = "whatsapp://send?phone=+123456789";
+                    break;
+                case "snapchat":
+                    appLink = "snapchat://add/youngnishant";
+                    break;
+                case "linkedin":
+                    appLink = "linkedin://profile/youngnishant";
+                    break;
+                case "telegram":
+                    appLink = "tg://resolve?domain=youngnishant";
+                    break;
+                default:
+                    // For platforms not listed, open a default link
+                    appLink = "https://www.example.com";
+                    break;
+            }
+
+            // Open the app link
+            window.location.href = appLink;
+        }
+    </script>
+
+    <button onclick="openMobileAppLink('youtube')">Open YouTube App</button>
+    <button onclick="openMobileAppLink('tiktok')">Open TikTok App</button>
+    <button onclick="openMobileAppLink('facebook')">Open Facebook App</button>
+    <button onclick="openMobileAppLink('instagram')">Open Instagram App</button>
+    <button onclick="openMobileAppLink('amazon')">Open Amazon App</button>
+    <button onclick="openMobileAppLink('ebay')">Open eBay App</button>
+    <button onclick="openMobileAppLink('reddit')">Open Reddit App</button>
+    <button onclick="openMobileAppLink('temu')">Open Temu App</button>
+    <button onclick="openMobileAppLink('spotify')">Open Spotify App</button>
+    <button onclick="openMobileAppLink('applemusic')">Open Apple Music App</button>
+    <button onclick="openMobileAppLink('deezer')">Open Deezer App</button>
+    <button onclick="openMobileAppLink('soundcloud')">Open SoundCloud App</button>
+    <button onclick="openMobileAppLink('messenger')">Open Facebook Messenger App</button>
+    <button onclick="openMobileAppLink('whatsapp')">Open WhatsApp App</button>
+    <button onclick="openMobileAppLink('snapchat')">Open Snapchat App</button>
+    <button onclick="openMobileAppLink('linkedin')">Open LinkedIn App</button>
+    <button onclick="openMobileAppLink('telegram')">Open Telegram App</button>
+
+</body>
+
+</html>
